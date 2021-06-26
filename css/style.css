@@ -1,0 +1,434 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea {
+  user-select: text;
+}
+
+body,
+button,
+input,
+keygen,
+select,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, open_sanslight,
+    "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body {
+  height: 100vh;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #00d3e2;
+}
+
+.welcome-page-container {
+  min-height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  padding: 2em 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .toolkit ul {
+  display: flex;
+}
+
+.meeting-details {
+  text-align: center;
+}
+
+.container {
+  padding: 1em 0;
+  margin: 0 auto;
+  justify-self: center;
+}
+
+.header-text-container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.header-text {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1e5aa4 !important;
+  padding: 0 0 0.75em 0;
+}
+
+input[type="password"],
+input[type="text"],
+textarea {
+  outline: 0;
+  resize: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+.form-inline {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  position: relative;
+}
+
+.form-inline input {
+  height: auto;
+}
+
+.form-control {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 38px;
+  border: none;
+  margin: 0;
+  padding: 21px 2.5em;
+  overflow: visible;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  font-size: 70%;
+  letter-spacing: 0.15rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.btn {
+  background-color: #fcb900;
+  border-radius: 40px;
+  box-shadow: 0;
+  border: 1px solid transparent;
+  padding: 8px;
+  z-index: 2;
+  position: absolute;
+  top:0;
+  right: 2px;
+}
+
+.roundbtn {
+  outline: none;
+  margin: auto;
+  float: right;
+}
+
+.based-on-title {
+  margin-top: 1em;
+  font-size: 14px;
+  color: #1e5aa4 !important;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.counter {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.square {
+  padding: 0 0.75rem;
+  border-radius: 8px;
+  color: white;
+  border: solid 3px white;
+  margin: 1%;
+}
+
+.content {
+  color: #1e5aa4 !important;
+  text-align: center;
+  font-family: inherit;
+}
+
+.count {
+  font-size: 55.25px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: -14px;
+}
+
+.display-text {
+  font-size: 10px;
+}
+
+.count-timestamp {
+  margin-top: 0.5em;
+  font-size: 13px;
+  color: #1e5aa4 !important;
+}
+
+.footer {
+  position: sticky;
+  font-size: 0.75rem;
+  background-image: url(../images/bottom_bg.png);
+  padding: 60px 20px 20px 40px !important;
+  right: 0; 
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.my-auto span{
+    display: inline-block;
+    padding: 0;
+    font-size: 0.75rem;
+    line-height: 28px;
+    font-weight: 400;
+    vertical-align: top;
+}
+
+.footer-img-left {
+  width: 28px;
+  padding: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  color: #777777;
+  width: 100%;
+  padding: 0.75rem;
+}
+
+.footer-right {
+  vertical-align: baseline;
+}
+
+a {
+    color: rgb(76, 154, 255);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 1090px){
+  .form-inline {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .header-text-container{
+    width: 70%;
+  }
+
+  .header-text {
+    font-size: 1.9rem;
+  }
+  
+  .form-inline {
+    width: 60%;
+  }
+
+  .footer {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .header-text-container{
+    width: 75%;
+  }
+  
+  .header-text {
+    font-size: 1.8rem;
+  }
+
+  .form-inline{
+    width: 70%
+  }
+
+  .btn img {
+    width: 37px;
+  }
+
+  .form-control {
+    padding: 20px 2rem;
+    font-size: 60%;
+    letter-spacing: 0.13rem;
+  }
+}
+
+@media only screen and (max-width: 992px) and (orientation: landscape){
+  .body {
+    overflow: auto;
+  }
+  .footer {
+    position: relative;
+  }
+
+  .btn img {
+    width: 32px;
+  }
+
+  .form-control {
+    padding: 18px 2rem;
+    font-size: 60%;
+    letter-spacing: 0.13rem;
+  }
+
+  .my-auto {
+    display: none;
+  }
+
+  .footer-content {
+    display: block;
+  }
+
+  .footer-right {
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 692px) {
+  .header-text {
+    font-size: 1.7rem;
+  }
+  
+  .form-inline {
+    width: 73%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .header-text-container{
+    width: 85%;
+  }
+
+  .header-text {
+    font-size: 1.6rem;
+  }
+
+  .form-inline {
+    width: 79%;
+  }
+
+  .counter {
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .count {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: -11px;
+  }
+
+  .square {
+    margin: 1.5%;
+  }
+
+  .based-on-title {
+    margin: 0.75em 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .display-text {
+    font-size: 8px;
+  }
+
+  .count-timestamp {
+    font-size: 11px;
+    color: #1e5aa4 !important;
+  }
+
+  .footer-img-left {
+    width: 24px;
+  }
+}
+
+
+@media only screen and (max-width: 480px){
+  .header-text-container {
+    width: 90%;
+  }
+
+  .header-text {
+    font-size: 1.1rem;
+  }
+
+  .form-inline {
+    width: 90%;
+  }
+
+  .btn img {
+    width: 30px;
+  }
+
+  .form-control {
+    padding: 17px 1.5rem;
+    font-size: 55%;
+    letter-spacing: 0.1rem;
+  }
+
+  .welcome-logo img {
+    height: 45px;
+  }
+
+  .toolkit svg, 
+  .toolkit img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .counter {
+    width: 40%;
+  }
+
+  .count {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: -11px;
+  }
+
+  .square {
+    margin: 1.5%;
+  }
+
+  .my-auto {
+    display: none;
+  }
+
+  .footer-content {
+    display: block;
+  }
+
+  .footer-right {
+    float: right;
+  }
+}
